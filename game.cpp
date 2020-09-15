@@ -1,6 +1,5 @@
 #include <iostream>
 #include <conio.h>
-#include <Windows.h>
 using namespace std;
 bool gameOver;
 const int width = 30;
@@ -23,7 +22,7 @@ void Setup()
 }
 void Draw()
 {
-	system("cls");
+	system("clear");
 	for (int i = 0; i < width + 2; i++)
 		cout << "#";
 	cout << endl;
@@ -151,7 +150,7 @@ int main()
 		Draw();
 		Input();
 		Logic();
-		Sleep(10);
+		sleep(10)
 	}
 	return 0;
 }
